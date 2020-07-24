@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 18px;
+  color: white;
+}
+
+h5 {
+  font-size: 12px;
+  color: white;
+}
+
+.header {
+  background-color: #1C2141;
+  height: 90px;
+  line-height: 90px;
+}
+
+.header a {
+  font-size: 24px;
+  transition: .5s;
+  letter-spacing: 0.1em;
+}
+
+.menu-btn {
+  padding-top: 5px;
+  float: right;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+/*  border: 3px solid #fff;*/
+}
+
+.menu-btn_burger {
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn_burger::before, .menu-btn_burger::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn_burger::before {
+  transform: translateY(-16px);
+}
+
+.menu-btn_burger::after {
+  transform: translateY(16px);
+}
+
+.menu-btn.open .menu-btn_burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn_burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn_burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.home-icon {
+  float: left;
+}
+
+.home-icon a {
+  padding: 20px;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.home-icon img {
+  vertical-align: middle;
+  padding-right: 20px;
+}
+
+#nav {
+  float: right;
+  display: block;
+  margin-top: 0;
+}
+
+#nav li {
+  display: inline;
+  padding-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: .5s;
+}
+
+a:hover {
+  color: #83D9FF;
+  transition: .5s;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.column {
+  min-width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+.footer {
+  background-color: #0A0020;
+  height: 180px;
+  padding: 5px;
+}
+
+.column h4 {
+  color: #2C2242;
+}
+
+.column p {
+  color: #555;
+}
+
+.footer a {
+  color: #83D9FF;
+}
+
+.footer a:hover {
+  color: #F6A623;
+  transition: .5s;
+  font-size: 18px;
+}
+
+.about-main .container {
+  text-align: center;
+}
+
+.about-main .container img {
+  border-radius: 50%;
+  padding: 0;
+  margin-left: 12%;
+}
